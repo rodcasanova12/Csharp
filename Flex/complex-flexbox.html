@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Complex flexbox example</title>
+    <style>
+      html {
+        font-family: sans-serif;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      header {
+        background: rgb(2, 0, 128);
+        height: 100px;
+      }
+
+      h1 {
+        text-align: center;
+        color: white;
+        line-height: 100px;
+        margin: 0;
+      }
+
+      article {
+        padding: 10px;
+        margin: 10px;
+        background: rgb(255, 251, 0);
+      }
+
+      /* Add your flexbox CSS below here */
+
+      section {
+        display: flex;
+      }
+
+      article {
+        flex: 1 200px;
+      }
+
+      article:nth-of-type(3) {
+        flex: 3 200px;
+        display: flex;
+        flex-flow: column;
+      }
+
+      article:nth-of-type(3) div:first-child {
+        flex: 1 100px;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-around;
+      }
+
+      button {
+        flex: 1 auto;
+        margin: 5px;
+        font-size: 18px;
+        line-height: 1.5;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Complex flexbox example</h1>
+    </header>
+
+    <section>
+      <article>
+        <h2>First article</h2>
+
+        <p>Airplane, also called aeroplane or plane, any of a class of fixed-wing aircraft that is heavier than air, propelled by a screw propeller or a high-velocity jet, and supported by the dynamic reaction of the air against its wings.</p>
+      </article>
+
+      <article>
+        <h2>Second article</h2>
+
+        <p>The essential components of an airplane are a wing system to sustain it in flight, tail surfaces to stabilize the wings, movable surfaces to control the attitude of the plane in flight, and a power plant to provide the thrust necessary to push the vehicle through the air.</p>
+      </article>
+
+      <article>
+        <div>
+          <button>Smile</button>
+          <button>Laugh</button>
+          <button>Wink</button>
+          <button>Shrug</button>
+          <button>Blush</button>
+        </div>
+        <div>
+          <p>The essential components of an airplane are a wing system to sustain it in flight, tail surfaces to stabilize the wings, movable surfaces to control the attitude of the plane in flight, and a power plant to provide the thrust necessary to push the vehicle through the air.</p>
+        </div>
+        <div>
+          <p>Airplanes are awesome!!!</p>
+        </div>
+      </article>
+    </section>
+  </body>
+</html>

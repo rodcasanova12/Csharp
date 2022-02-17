@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Flexbox 0 — starting code</title>
+    <style>
+      html {
+        font-family: sans-serif;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      header {
+        background: rgb(115, 128, 0);
+        height: 100px;
+      }
+
+      h1 {
+        text-align: center;
+        color: white;
+        line-height: 100px;
+        margin: 0;
+        
+      }
+
+      article {
+        padding: 10px;
+        margin: 10px;
+        background: rgb(0, 153, 255);
+        
+      }
+
+      /* Add your flexbox CSS below here */
+      article {
+        flex: 1 200px;
+      }
+      article:nth-of-type(3) {
+        flex: 2 200px;
+      }
+
+
+
+      
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Sample flexbox example</h1>
+    </header>
+
+    <section>
+      <article>
+        <h2>Airplane Definition</h2>
+
+        <p>Airplane, also called aeroplane or plane, any of a class of fixed-wing aircraft that is heavier than air, propelled by a screw propeller or a high-velocity jet, and supported by the dynamic reaction of the air against its wings.</p>
+      </article>
+
+      <article>
+        <h2>Essential Components</h2>
+
+        <p>The essential components of an airplane are a wing system to sustain it in flight, tail surfaces to stabilize the wings, movable surfaces to control the attitude of the plane in flight, and a power plant to provide the thrust necessary to push the vehicle through the air.</p>
+      </article>
+
+      <article>
+        <h2>Aerodynamics</h2>
+
+        <p>An aircraft in straight-and-level unaccelerated flight has four forces acting on it. (In turning, diving, or climbing flight, additional forces come into play.) These forces are lift, an upward-acting force; drag, a retarding force of the resistance to lift and to the friction of the aircraft moving through the air; weight, the downward effect that gravity has on the aircraft; and thrust, the forward-acting force provided by the propulsion system (or, in the case of unpowered aircraft, by using gravity to translate altitude into speed). Drag and weight are elements inherent in any object, including an aircraft. Lift and thrust are artificially created elements devised to enable an aircraft to fly.</p>
+
+        
+      </article>
+    </section>
+  </body>
+</html>
